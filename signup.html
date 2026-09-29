@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="form-page">
+    <a class="page-logo" href="index.html"><img src="images/ui/logo.png" alt="Logo"></a>
+    <div class="form-box">
+      <h1>Sign Up</h1>
+      <p class="form-message" id="signup-message" role="alert"></p>
+      <form id="signup-form" novalidate>
+        <label for="name">Full Name</label>
+        <input class="input-area" type="text" id="name" name="name" placeholder="Name" required>
+
+        <label for="email">Email</label>
+        <input class="input-area" type="email" id="email" name="email" placeholder="Email ID" required>
+
+        <label for="password">Password</label>
+        <input class="input-area" type="password" id="password" name="password" placeholder="Password (4 to 40 characters)"
+               minlength="4" maxlength="40" required>
+
+        <label for="confirm-password">Confirm Password</label>
+        <input class="input-area" type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password"
+               maxlength="40" required>
+
+        <div class="checkbox-row">
+          <input type="checkbox" id="show-password" onclick="togglePassword()">
+          <label for="show-password">Show password</label>
+        </div>
+
+        <input class="submit-btn" type="submit" value="Create Account">
+      </form>
+      <p class="small-text"><a href="index.html">Already have an account? Sign in</a></p>
+    </div>
+  </main>
+  <footer>
+    <ul class="footer-links">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Terms of use</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Feedback</a></li>
+      <li><a href="#">Career</a></li>
+    </ul>
+    <label for="language">Language</label>
+    <select id="language">
+      <option>English</option>
+      <option>عربي</option>
+      <option>中國人</option>
+      <option>Française</option>
+      <option>Deutsch</option>
+      <option>हिंदी</option>
+      <option>Italiana</option>
+      <option>日本</option>
+      <option>Latin</option>
+      <option>मराठी</option>
+      <option>فارسی</option>
+      <option>русский</option>
+      <option>Española</option>
+      <option>தமிழ்</option>
+      <option>ไทย</option>
+      <option>اردو</option>
+      <option>Tiếng Việt</option>
+    </select>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

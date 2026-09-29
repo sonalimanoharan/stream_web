@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="form-page">
+    <a class="page-logo" href="index.html"><img src="images/ui/logo.png" alt="Logo"></a>
+    <div class="form-box">
+      <h1>Sign In</h1>
+      <p class="form-message" id="signin-message" role="alert"></p>
+      <form id="signin-form" novalidate>
+        <label for="email">Email</label>
+        <input class="input-area" type="email" id="email" name="email" placeholder="Email ID" required>
+
+        <label for="password">Password</label>
+        <input class="input-area" type="password" id="password" name="password" placeholder="Password"
+               minlength="4" maxlength="40" title="Your password must contain between 4 and 40 characters" required>
+
+        <div class="checkbox-row">
+          <input type="checkbox" id="show-password" onclick="togglePassword()">
+          <label for="show-password">Show password</label>
+        </div>
+
+        <input class="submit-btn" type="submit" value="Login">
+      </form>
+      <p class="small-text"><a href="signup.html">New to Netflix? Sign up</a></p>
+      <p class="demo-note">Demo account: demo@stream.com / demo1234</p>
+    </div>
+  </main>
+  <footer>
+    <ul class="footer-links">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Terms of use</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Feedback</a></li>
+      <li><a href="#">Career</a></li>
+    </ul>
+    <label for="language">Language</label>
+    <select id="language">
+      <option>English</option>
+      <option>عربي</option>
+      <option>中國人</option>
+      <option>Française</option>
+      <option>Deutsch</option>
+      <option>हिंदी</option>
+      <option>Italiana</option>
+      <option>日本</option>
+      <option>Latin</option>
+      <option>मराठी</option>
+      <option>فارسی</option>
+      <option>русский</option>
+      <option>Española</option>
+      <option>தமிழ்</option>
+      <option>ไทย</option>
+      <option>اردو</option>
+      <option>Tiếng Việt</option>
+    </select>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

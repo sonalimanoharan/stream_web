@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose a Plan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-protected>
+  <nav class="navbar">
+    <a class="logo" href="home.html"><img src="images/ui/logo.png" alt="Home"></a>
+    <form class="search" id="search-form" role="search">
+      <input type="text" placeholder="Search.." aria-label="Search">
+      <button type="submit"><img src="images/ui/search.jfif" alt="Search" width="20" height="20"></button>
+    </form>
+    <a class="profile" href="index.html"><img src="images/ui/profile.jfif" alt="Profile"></a>
+  </nav>
+  <img class="banner" src="images/ui/subscription.gif" alt="Subscribe">
+
+  <table class="plans">
+    <tr>
+      <th>Package Name</th>
+      <th>Mobile</th>
+      <th>Basic</th>
+      <th>Standard</th>
+      <th>Premium</th>
+    </tr>
+    <tr>
+      <td>Monthly price</td>
+      <td>Rs.199</td>
+      <td>Rs.499</td>
+      <td>Rs.649</td>
+      <td>Rs.799</td>
+    </tr>
+    <tr>
+      <td>Video Quality</td>
+      <td>Good</td>
+      <td>Good</td>
+      <td>Better</td>
+      <td>Best</td>
+    </tr>
+    <tr>
+      <td>Resolution</td>
+      <td>480p</td>
+      <td>480p</td>
+      <td>1080p</td>
+      <td>4K+HDR</td>
+    </tr>
+  </table>
+
+  <form class="details" id="subscribe-form">
+    <h2>DETAILS</h2>
+
+    <label for="plan">Package Name</label>
+    <select class="input-area" id="plan" name="plan" required>
+      <option value="">-- Choose a plan --</option>
+      <option>Mobile</option>
+      <option>Basic</option>
+      <option>Standard</option>
+      <option>Premium</option>
+    </select>
+
+    <label for="username">User Name</label>
+    <input class="input-area" type="text" id="username" name="username" required>
+
+    <label for="amount">Recharge Amount</label>
+    <input class="input-area" type="text" id="amount" name="amount" readonly placeholder="Choose a plan first">
+
+    <fieldset>
+      <legend>Select a Payment Mode</legend>
+      <label><input type="radio" name="payment" value="debit" checked> Debit</label>
+      <label><input type="radio" name="payment" value="credit"> Credit</label>
+    </fieldset>
+
+    <input class="submit-btn" type="submit" value="Continue to Payment">
+  </form>
+
+  <footer>
+    <ul class="footer-links">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Terms of use</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Feedback</a></li>
+      <li><a href="#">Career</a></li>
+    </ul>
+    <label for="language">Language</label>
+    <select id="language">
+      <option>English</option>
+      <option>عربي</option>
+      <option>中國人</option>
+      <option>Française</option>
+      <option>Deutsch</option>
+      <option>हिंदी</option>
+      <option>Italiana</option>
+      <option>日本</option>
+      <option>Latin</option>
+      <option>मराठी</option>
+      <option>فارسی</option>
+      <option>русский</option>
+      <option>Española</option>
+      <option>தமிழ்</option>
+      <option>ไทย</option>
+      <option>اردو</option>
+      <option>Tiếng Việt</option>
+    </select>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

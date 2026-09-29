@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card Payment</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-protected>
+  <main class="form-page">
+    <a class="page-logo" href="home.html"><img src="images/ui/logo.png" alt="Home"></a>
+    <div class="form-box">
+      <h1>Credit</h1>
+      <form action="home.html">
+        <label for="card-name">Card Holder Name</label>
+        <input class="input-area" type="text" id="card-name" name="card-name" placeholder="Name" required>
+
+        <label for="card-number">Card Number</label>
+        <input class="input-area" type="text" inputmode="numeric" id="card-number" name="card-number"
+               placeholder="0000000000000000" minlength="16" maxlength="16" pattern="[0-9]{16}"
+               title="Enter the 16 digit card number" required>
+
+        <div class="form-row">
+          <div>
+            <label for="card-expiry">Card Expiry</label>
+            <input class="input-area" type="month" id="card-expiry" name="card-expiry" required>
+          </div>
+          <div>
+            <label for="cvv">CVV</label>
+            <input class="input-area" type="password" inputmode="numeric" id="cvv" name="cvv" placeholder="CVV"
+                   minlength="3" maxlength="3" pattern="[0-9]{3}" title="Enter the 3 digit CVV" required>
+          </div>
+        </div>
+
+        <input class="submit-btn" type="submit" value="Make Payment">
+      </form>
+      <p class="demo-note">Demo project: no real payment is made.</p>
+      <p class="small-text"><a href="subscribe.html">&larr; Back to plans</a></p>
+    </div>
+  </main>
+  <footer>
+    <ul class="footer-links">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Terms of use</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Feedback</a></li>
+      <li><a href="#">Career</a></li>
+    </ul>
+    <label for="language">Language</label>
+    <select id="language">
+      <option>English</option>
+      <option>عربي</option>
+      <option>中國人</option>
+      <option>Française</option>
+      <option>Deutsch</option>
+      <option>हिंदी</option>
+      <option>Italiana</option>
+      <option>日本</option>
+      <option>Latin</option>
+      <option>मराठी</option>
+      <option>فارسی</option>
+      <option>русский</option>
+      <option>Española</option>
+      <option>தமிழ்</option>
+      <option>ไทย</option>
+      <option>اردو</option>
+      <option>Tiếng Việt</option>
+    </select>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
